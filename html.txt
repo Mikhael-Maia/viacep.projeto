@@ -1,0 +1,56 @@
+HTML:
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulário</title>
+  </head>
+  <body>
+    <div id="response"></div>
+        <p id="ruaResponse"></p>
+        <p id="bairroResponse"></p>
+        <p id="cepResponse"></p>
+        <p id="dddResponse"></p>
+        <p id="cidadeResponse"></p>
+        <p id="estadoResponse"></p>
+        
+    <form id="queryForm">
+      <h1>Formulário - Imobiliária X</h1>
+      <img
+        src="Plataforma-Imobiliaria.jpg"
+        alt=""
+        height="200px"
+        width="200px"
+      />
+      <hr />
+      <br />
+      <p>Por favor, preencha os dados do formulário abaixo.</p>
+      <h1>Inscreva-se</h1>
+      <div>
+        <input type="text" name="rua" id="rua" placeholder="Digite a sua rua" />
+      </div>
+      <div>
+        <input
+          type="text"
+          name="cidade"
+          id="cidade"
+          placeholder="Digite a sua cidade"
+        />
+      </div>
+      <div>
+        <input
+          type="text"
+          name="UF"
+          id="UF"
+          placeholder="Digite o seu estado"
+        />
+      </div>
+      <input type="submit" />
+    </form>
+    <hr />
+  </body>
+  <script src="../Js/scripts.js"></script>
+</html>
