@@ -29,15 +29,15 @@ async function consultApi(rua, cidade, estado) {
   }
 }
 // Routes
-app.post("/usuario-rua", async (req, res) => {
+app.post("/usuario-rua", async (req, res) => { // Volta a requisição pra você.
   try {
     console.log("req body", req.body);
     const { rua, cidade, estado } = req.body;
     const apiResponse = await consultApi(rua, cidade, estado);
     console.log(apiResponse);
-    return res.status(200).send(apiResponse);
+    return res.status(200).send(apiResponse); // Status 200 mostra que o código deu certo.
   } catch (err) {
-    res.status(500).send({ message: "An internal error has occured" });
+    res.status(500).send({ message: "An internal error has occured" }); // Status 500 mostra que ele não deu.
   }
 });
 app.listen(3000, () => { // Ouvindo na porta 3000.
